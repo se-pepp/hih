@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Highlands Cupcakes - Menu</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header>
+    <nav>
+      <div id="logo">HIGHLANDS CUPCAKES</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Our Menu</h1>
+    <p>Choose from our delicious range of cupcakes.</p>
+
+    <section class="grid-container">
+      <article class="cupcake-card">
+        <img src="images/vanilla-cupcake.jpg" alt="Vanilla Dream Cupcake" />
+        <h3>Vanilla Dream</h3>
+        <p>Classic vanilla flavor with creamy pink frosting.</p>
+        <button onclick="addToCart(1)">Add to Cart - £2.50</button>
+      </article>
+
+      <article class="cupcake-card">
+        <img src="images/chocolate-cupcake.jpg" alt="Chocolate Blast Cupcake" />
+        <h3>Chocolate Blast</h3>
+        <p>Rich chocolate topped with colorful sprinkles.</p>
+        <button onclick="addToCart(2)">Add to Cart - £3.00</button>
+      </article>
+
+      <article class="cupcake-card">
+        <img src="images/strawberry-cupcake.jpg" alt="Strawberry Sweet Cupcake" />
+        <h3>Strawberry Sweet</h3>
+        <p>Fresh strawberry flavor with cream cheese icing.</p>
+        <button onclick="addToCart(3)">Add to Cart - £3.50</button>
+      </article>
+
+      <!-- Add more cupcakes here if needed -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Highlands Cupcakes</p>
+    <p>Inspired by the spirit and values of Highlands School</p>
+  </footer>
+</body>
+</html>

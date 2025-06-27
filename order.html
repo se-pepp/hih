@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order - Highlands Cupcakes</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/order.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Place Your Order</h1>
+    <form id="order-form">
+      <label for="name">Full Name:</label>
+      <input id="name" type="text" required />
+
+      <label for="email">Email Address:</label>
+      <input id="email" type="email" required />
+
+      <label for="pickup-date">Pickup Date:</label>
+      <input id="pickup-date" type="date" required />
+
+      <button type="submit" class="btn">Submit Order</button>
+    </form>
+    <div id="order-message" class="order-message"></div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Highlands School Cupcake Club</p>
+  </footer>
+</body>
+</html>
